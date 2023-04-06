@@ -176,7 +176,6 @@ describe("Liquidation test for question 2", function () {
     });
 
     const gasPrice = 0;
-    //const q_debt_USDC = ethers.utils.parseUnits("8128.956343", 6);
 
     const accounts = await ethers.getSigners();
     const liquidator = accounts[0].address;
@@ -218,5 +217,3 @@ describe("Liquidation test for question 2", function () {
   });
 
 });
-
-

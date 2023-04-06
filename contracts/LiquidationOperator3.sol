@@ -230,7 +230,6 @@ contract LiquidationOperator3 is IUniswapV2Callee {
             ltv,
             healthFactor
         ) = lendingPool.getUserAccountData(liquidationTarget);
-        //debt_USDC = q_debt_USDC;
 
         require(healthFactor < (10 ** health_factor_decimals), "Cannot liquidate; health factor must be below 1" );
 
